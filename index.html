@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+     <!-- Top Navigation -->
+           <div class="top-nav">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search contact">
+                </div>
+                <div class="nav-icons">
+                    <div class="icon-btn"><i class="fas fa-user-plus"></i></div>
+                    <div class="icon-btn"><i class="fas fa-users"></i></div>
+                    <div class="icon-btn"><i class="fas fa-cog"></i></div>
+                    <div class="icon-btn"><i class="fas fa-calendar"></i></div>
+                    <div class="icon-btn"><i class="fas fa-eye"></i></div>
+                    <div class="icon-btn"><i class="fas fa-comments"></i></div>
+                    <div class="icon-btn"><i class="fas fa-clipboard"></i></div>
+                    <div class="icon-btn"><i class="fas fa-question-circle"></i></div>
+                    <div class="icon-btn"><i class="fas fa-info-circle"></i></div>
+                    
+                    <button class="relative icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell" class="lucide lucide-bell h-5 w-5"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+                <span class="absolute -top-0.5 -right-0.5 inline-flex h-2 w-2 rounded-full bg-rose-500 ring-2 ring-slate-900"></span>
+              </button>
+              <div class="icon-btn theme-toggle" id="themeToggle"><i class="fas fa-moon" id="themeIcon"></i></div>
+                </div>
+                <div class="profile-section">
+                    <div class="profile-avatar"><img src="assets/images/image_25.svg" alt=""></div>
+                    <div class="profile-info">
+                        <p>Savannah Nguyen</p>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </div>
+    <div class="app-container">
+        <!-- Left Navigation -->
+        <div class="left-nav">
+            <div class="nav-logo"><img src="assets/images/Spark_Logo.svg" alt="company logo"></div>
+            <div class="nav-item active"><i class="fas fa-search"></i></div>
+            <div class="nav-item"><i class="fas fa-folder"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-flag"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-users"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-palette"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-calendar"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-wallet"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-chart-bar"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-comments"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-file-alt"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-cog"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-item"><i class="fas fa-bars"></i><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-spacer"></div>
+            <div class="nav-item"><i class="fas fa-question-circle"></i></div>
+            <div class="nav-item"><i class="fas fa-user"></i></div>
+        </div>
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <img src="assets/images/image_25.svg" alt="Max Hollaway" class="profile-image">
+                <button class="absolute capture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="camera" class="lucide lucide-camera h-4 w-4"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+              </button>
+            </div>
+             <div>
+                    <div class="profile-name">Max Hollaway</div>
+                </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn">
+                    <i class="fas fa-bolt"></i> Quick Actions
+                </button>
+            </div>
+
+            <!-- More Actions -->
+            <div class="action-buttons btns-side-by-side">
+                <button class="action-btn secondary"><i class="fas fa-plus-circle"></i> Add Credit</button>
+                <button class="action-btn secondary"><i class="fas fa-dumbbell"></i> Create Workout</button>
+                <button class="action-btn secondary"><i class="fas fa-eye"></i> Show Fitness</button>
+                <button class="action-btn secondary"><i class="fas fa-barcode"></i> Bar Code Print</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Personal Info Section -->
+            <div class="personal-info-section">
+                <div class="personal-info-title" onclick="togglePersonalInfo(event)">
+                    <div class="btn_header_left">
+                        <span class="toggle-icon"><i class="fa-solid fa-play"></i></span>
+                        <h3>Personal Info</h3>
+                    </div>
+                    <div class="btn-header_right">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                </div>
+                <div class="personal-info-content">
+                    <div class="info-item">
+                        <span class="info-label">Pronuncation</span>
+                        <span class="info-value">—</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Using Student App</span>
+                        <span class="info-value">No</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Mobile Phone</span>
+                        <span class="info-value">(473)-555-0927</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Mobile Phone #2</span>
+                        <span class="info-value link">+ add new Phone</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email Address</span>
+                        <span class="info-value link">sam@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email Address #2</span>
+                        <span class="info-value link">+ add new Email</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tags Section -->
+            <div>
+                <div class="personal-info-title" onclick="toggleTags(event)">
+                     <div class="btn_header_left">
+                        <span class="toggle-icon"><i class="fa-solid fa-play"></i></span>
+                        <h3>Tags</h3>
+                    </div>
+                    <div class="btn-header_right">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="tags-section" id="tagsContent">
+                    <div class="tag">benefits-focus</div>
+                    <div class="tag">attended-appointment</div>
+                    <div class="tag">bought-uniform</div>
+                    <div class="tag">interested-in-kangfu</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-wrapper">
+
+            <!-- Tabs -->
+            <div class="tabs-section">
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-chart-line"></i></span> Profile
+                </div>
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-sticky-note"></i></span> Notes
+                </div>
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-envelope"></i></span> Communication
+                </div>
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-dumbbell"></i></span> Workouts
+                </div>
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-calendar-alt"></i></span> Attendance
+                </div>
+                <div class="tab active">
+                    <span class="tab-icon"><i class="fas fa-file-invoice"></i></span> Invoice
+                </div>
+                <div class="tab">
+                    <span class="tab-icon"><i class="fas fa-star"></i></span> Ranks
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content-area">
+                <!-- Stats Grid -->
+                  <div class="stats-grid">
+                    <div class="stat-card email">
+                        <div class="stat-info">
+                            <div class="stat-label">Email Sent</div>
+                            <div class="stat-value">6</div>
+                            <div class="stat-detail">Last 60 days</div>
+                        </div>
+                        <div class="stat-icon-box"><i class="fas fa-envelope"></i></div>
+                    </div>
+                    <div class="stat-card appointment">
+                        <div class="stat-info">
+                            <div class="stat-label">Appointment</div>
+                            <div class="stat-value">0</div>
+                            <div class="stat-detail">Clicked</div>
+                        </div>
+                        <div class="stat-icon-box"><i class="fas fa-calendar-check"></i></div>
+                    </div>
+                    <div class="stat-card attendance">
+                        <div class="stat-info">
+                            <div class="stat-label">Total Attendance</div>
+                            <div class="stat-value">81</div>
+                            <div class="stat-detail">Last 7 Days</div>
+                        </div>
+                        <div class="stat-icon-box"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                    <div class="stat-card tasks">
+                        <div class="stat-info">
+                            <div class="stat-label">Tasks</div>
+                            <div class="stat-value">3</div>
+                            <div class="stat-detail">Completed: 30</div>
+                        </div>
+                        <div class="stat-icon-box"><i class="fas fa-check-square"></i></div>
+                    </div>
+                    <div class="stat-card invoices">
+                        <div class="stat-info">
+                            <div class="stat-label">Invoices</div>
+                            <div class="stat-value">3</div>
+                            <div class="stat-detail">Completed: 3</div>
+                        </div>
+                        <div class="stat-icon-box"><i class="fas fa-file-alt"></i></div>
+                    </div>
+                </div>
+
+                <!-- Invoices Section -->
+                <div class="section-header">
+                    <div>
+                        <span class="section-title">Invoices / Payments</span>
+                        <span class="section-subtitle">45 invoices</span>
+                    </div>
+                    <button class="print-btn">
+                        <i class="fas fa-print"></i> Print Payments
+                    </button>
+                </div>
+
+                <!-- Table Controls -->
+                <div class="table-controls">
+                    <button class="control-btn active">Actions</button>
+                    <button class="control-btn">Only Paid</button>
+                    <button class="control-btn">Only Paid</button>
+                </div>
+
+                <!-- Table -->
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Invoice Summary</th>
+                                <th>Amount Paid</th>
+                                <th>Amount Owed</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="date-cell">12/17/2024</td>
+                                <td>
+                                    <div>Qty: 1, Sparring Gloves</div>
+                                    <div>Qty: 1, Black Hyper T-Shirt(Small)-Size-Small</div>
+                                    <div>Qty: 1, White Hyper T-Shirt (Small)- Size- Small</div>
+                                    <div>Qty: 1, Century Mouth Guard, White</div>
+                                    <div class="item-description" style="margin-top: 8px; padding-top: 8px;">Payments</div>
+                                    <div class="item-description">CC Terminal 12/17/2024 - Amt: $125.68</div>
+                                </td>
+                                <td class="amount-positive">$125.68</td>
+                                <td class="amount-zero">$0.00</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">12/10/2024</td>
+                                <td>
+                                    <div>Qty: 1, Black Hyper T-Shirt (Small)- Size - Small</div>
+                                    <div class="item-description">No payments found.</div>
+                                </td>
+                                <td class="amount-zero">$0.00</td>
+                                <td class="amount-zero">$21.67</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">12/10/2024</td>
+                                <td>
+                                    <div>Qty: 1, Century Mouth Guard, Black</div>
+                                    <div>Qty: 1, Black Hyper T-Shirt (Small)- Size - Small</div>
+                                    <div class="item-description">Qty: 1, White Hyper T-Shirt (Small)-Size-Small</div>
+                                </td>
+                                <td class="amount-positive">$131.11</td>
+                                <td class="amount-zero">$0.00</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">10/02/2024</td>
+                                <td>
+                                    <div>Qty: 1, Membership Down Payment</div>
+                                    <div>Qty: 1, Sanabul Taekwondo Gloves</div>
+                                    <div class="item-description">Qty: 1, Century Mouth Guard, Green</div>
+                                    <div class="item-description" style="margin-top: 8px; padding-top: 8px;">Payments</div>
+                                    <div class="item-description">CC Terminal 10/12/2024 - Amt: $178.76</div>
+                                </td>
+                                <td class="amount-positive">$178.76</td>
+                                <td class="amount-zero">$0.00</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">12/12/2024</td>
+                                <td>
+                                    <div>Qty: 1, Black Hyper T-Shirt (Small)- Size - Small</div>
+                                    <div class="item-description">No payments found.</div>
+                                </td>
+                                <td class="amount-zero">$0.00</td>
+                                <td class="amount-zero">$21.67</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">12/12/2024</td>
+                                <td>
+                                    <div>Qty: 1, Century Mouth Guard, Black</div>
+                                    <div>Qty: 1, Black Hyper T-Shirt (Small)- Size - Small</div>
+                                    <div class="item-description">Qty: 1, White Hyper T-Shirt (Small)-Size-Small</div>
+                                </td>
+                                <td class="amount-positive">$131.11</td>
+                                <td class="amount-zero">$0.00</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                            <tr>
+                                <td class="date-cell">10/02/2024</td>
+                                <td>
+                                    <div>Qty: 1, Membership Down Payment</div>
+                                    <div>Qty: 1, Sanabul Taekwondo Gloves</div>
+                                    <div class="item-description">Qty: 1, Century Mouth Guard, Green</div>
+                                    <div class="item-description" style="margin-top: 8px; padding-top: 8px;">Payments</div>
+                                    <div class="item-description">CC Terminal 10/12/2024 - Amt: $178.76</div>
+                                </td>
+                                <td class="amount-positive">$178.76</td>
+                                <td class="amount-zero">$0.00</td>
+                                <td><a class="view-link">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Summary -->
+                <div class="summary-text">
+                    Total Paid: <strong>$272.28</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Total Owed: <strong>21:67</strong>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn">Prev</button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <span class="pagination-text">to</span>
+                    <button class="pagination-btn">10</button>
+                    <button class="pagination-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>

@@ -90,6 +90,6 @@
             console.log('Search:', e.target.value);
         });
 
-//         if (window.location.hostname !== "localhost") {
+//         if (window.location.hostname !== "https://musab123bs.github.io/techelix/") {
 //   document.body.innerHTML = "<h2 style='text-align:center;color:red;'>Unauthorized Copy Detected ⚠️</h2>";
 // }

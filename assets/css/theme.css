@@ -462,23 +462,23 @@ body.light-mode .nav-log img {
 }
 
 .stat-card:first-child {
-  background-image: url(../assets/images/frame_1.png);
+  background-image: url(./../images/frame_1.png);
   background-size: cover;
 }
 .stat-card:nth-child(2) {
-  background-image: url(../assets/images/frame_2.png);
+  background-image: url(./../images/frame_2.png);
   background-size: cover;
 }
 .stat-card:nth-child(3) {
-  background-image: url(../assets/images/frame_3.png);
+  background-image: url(./../images/frame_3.png);
   background-size: cover;
 }
 .stat-card:nth-child(4) {
-  background-image: url(../assets/images/frame_4.png);
+  background-image: url(./../images/frame_4.png);
   background-size: cover;
 }
 .stat-card:nth-child(5) {
-  background-image: url(../assets/images/frame_5.png);
+  background-image: url(./../images/frame_5.png);
   background-size: cover;
 }
 .stat-card > * {

@@ -41,7 +41,9 @@ body.light-mode {
   --teal: #00cccc;
   --dark: fff;
 }
-
+body.light-mode .nav-logo img {
+  filter: invert(1) !important;
+}
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 0px;
